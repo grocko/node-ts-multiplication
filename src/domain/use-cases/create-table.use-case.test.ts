@@ -9,7 +9,7 @@ describe ('CreateTableUseCase ', () => {
         const table = createTable.execute({ base: 2});
         const rows = table.split('\n').length;
 
-        console.log(table);
+        // console.log(table);
 
         expect(createTable).toBeInstanceOf( CreateTable);
         expect (table).toContain('2 x 1 = 2');
@@ -28,7 +28,7 @@ describe ('CreateTableUseCase ', () => {
         const table = createTable.execute( options );
         const rows = table.split('\n').length;
 
-        console.log(table);
+        // console.log(table);
         expect (table).toContain('3 x 1 = 3');
         expect (table).toContain('3 x 10 = 30');
         expect (table).toContain('3 x 20 = 60');
